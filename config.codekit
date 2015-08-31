@@ -175,6 +175,27 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
+	"\/README.md": {
+		"criticStyle": 0,
+		"enableFootnotes": 1,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/README.md",
+		"maskEmailAddresses": 1,
+		"outputAbbreviatedPath": "\/README.html",
+		"outputFormat": 0,
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
+		},
 	"\/site\/_config.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -186,16 +207,16 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
-	"\/site\/css\/_style.css": {
+	"\/site\/css\/style.css": {
 		"fileType": 16,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/site\/css\/_style.css",
+		"inputAbbreviatedPath": "\/site\/css\/style.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/site\/css\/_style.less": {
+	"\/site\/css\/style.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
 		"disableJavascript": 0,
@@ -203,8 +224,8 @@
 		"ieCompatibility": 1,
 		"ignore": 0,
 		"ignoreWasSetByUser": 1,
-		"inputAbbreviatedPath": "\/site\/css\/_style.less",
-		"outputAbbreviatedPath": "\/site\/css\/_style.css",
+		"inputAbbreviatedPath": "\/site\/css\/style.less",
+		"outputAbbreviatedPath": "\/site\/css\/style.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -347,12 +368,12 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/site\/js\/_script.js": {
+	"\/site\/js\/script.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/site\/js\/_script.js",
-		"outputAbbreviatedPath": "\/site\/js\/min\/_script-min.js",
+		"inputAbbreviatedPath": "\/site\/js\/script.js",
+		"outputAbbreviatedPath": "\/site\/js\/min\/script-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
