@@ -1,0 +1,140 @@
+@import '../../dw/dw.less';
+//CONTAINER WIDTHS:
+@containerWidth: 960px;
+@containerWidthTablet: 480px;
+
+@b: #222;
+@w: #fff;
+@g: #626262;
+@main: #9AC850; //Verde
+@sec: #E85C35; //Naranja
+
+
+.font{ font-family: 'Lora', serif; }
+.font2{ font-family: 'PT Sans Caption', sans-serif; }
+
+body{
+  .font;
+}
+
+header{
+  border-top: 10px solid @sec;
+  border-bottom: 10px solid @main;
+  .slogan{
+    margin-top: 80px;
+    .background-image(linear-gradient(to bottom, @w 0%, @w/1.1 100%));
+    color: @g;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1.1em;
+  }
+}
+
+#general{
+  .background-image(linear-gradient(to bottom, @w 0%, @w/1.1 100%));
+  &>.container{
+    padding: 40px 0;
+    #banner{
+      position: relative;
+      .box-sizing(border-box);
+      border: 2px solid @sec;
+      padding: 20px;
+      h2{
+        .hs(@sec);
+        position: absolute;
+        left: 0;
+        bottom: 60px;
+        padding: 10px 40px;
+        @media @mobile{
+          top: 0;
+          bottom: auto;
+          font-size: 1.1em;
+          padding: 10px;
+          width: 100%;
+          .box-sizing(border-box);
+        }
+      }
+      .slick-arrow{
+        background: @sec;
+        color: @w;
+        font-size: 3em;
+        width: 48px; height: 50px;
+        top: auto;
+        bottom:-20px;
+        &.slick-prev{left: -20px;}
+        &.slick-next{right: -20px;}
+        &:hover{
+          background: @w;
+          color:@sec;
+        }
+      }
+    }
+    #asociados{
+      @media @tablet,@mobile{margin-top: 40px;}
+      h3{
+        .hs(@main);
+        padding: 10px 20px;
+      }
+      p{
+        .font2;
+        color:@g;
+        margin: 10px;
+      }
+      form{
+        label{
+          display: block;
+          color: @main;
+          .font2;
+          font-size: .9em;
+          margin-top: 10px;
+          margin-bottom: 5px;
+        }
+        input, textarea{
+          background: transparent;
+          border: 2px solid @main !important;
+          .font2;
+          font-size: 0.9em;
+        }
+        button{
+          background: @main;
+          color: @w;
+          width: 100%;
+          text-align: center;
+          padding: 10px;
+          border: none;
+          text-transform: uppercase;
+          .font;
+          font-size: 1em;
+          margin-top: 10px;
+          &:hover{
+            background: @sec;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+footer{
+  background: @g/1.5;
+  text-align: center;
+  padding: 20px;
+  .font;
+  font-size: 0.9em;
+  color:@g*1.5;
+  text-transform: uppercase;
+}
+
+
+.hs(@bg){
+  background: @bg;
+  color:@w;
+  z-index: 1000;
+  .font;
+  font-weight: lighter;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  text-align: center;
+}

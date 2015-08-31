@@ -1,0 +1,48 @@
+include site/_config.jade
+
++html5
+  +head(title, stylesheets, keywords, description)
+  body
+    +sliderbg('header', 'site/img/bg1.jpg', 'site/img/bg2.jpg', 'site/img/bg3.jpg', 'site/img/bg4.jpg')    
+    header
+      .container
+        .col4.push4.col-t6.push-t3.col-m6.push-m3
+          a(href=dominio, data-sr="enter top"): img(src="site/img/responsablesxmexico.png", alt="Responsables X México").w100
+      .container
+        .col6.push3.col-t10.push-t1.col-m12.push-m0
+          .slogan(data-sr="enter bottom") ¡BUSCAMOS HACER EL CAMBIO!
+    section#general
+      .container
+        .col8.col-t10.push-t1.col-m12.push-m0#banner
+          h2 Nuestros candidatos
+          +slider('one', 'site/img/candidato1.jpg', 'site/img/candidato2.jpg', 'site/img/candidato3.jpg', 'site/img/candidato4.jpg','site/img/candidato5.jpg', 'site/img/candidato6.jpg', 'site/img/candidato7.jpg')
+        .col4.col-t10.push-t1.col-m12.push-m0#asociados
+          h3 ASOCIADO INFORMADO
+          p Regístrate y recibe información en tu correo y/o móvil, así como los avisos de contenidos nuevos e importantes para tí.
+          form(action="#").simple
+            +formInput('hidden', 'some@hotmail.com', 0,0,0, para)
+            +formInput('hidden', 'some@hotmail.com',0,0,0, de)
+            +formInput('hidden', 'Nuevo registro del sitio Responsables X México',0,0,0, asunto)
+            .container
+              .col12
+                +formInput('text', 'Nombre', 'Nombre completo:', 'Ingresa tu nombre', true)
+            .container
+              .col6
+                +formInput('email', 'Correo', 'Correo electrónico:', 'usuario@dominio.com', true)
+              .col6
+                +formInput('tel', 'Tel', 'Teléfono celular:', '044 + lada + Dígitos', true)
+            .container
+              .col6: +formInput('text', 'Estado', 'Estado:', '', true)
+              .col6: +formInput('text', 'Municipio', 'Municipio:', 'o delegación', true)
+            .container
+              .col4: +formInput('text', 'Facebook', 'Facebook:')
+              .col4: +formInput('text', 'Twitter', 'Twitter:')
+              .col4: +formInput('text', 'Instagram', 'Instagram:')
+            .container
+              .col6.resultado &nbsp;
+              .col6
+                button(type="submit") Enviar
+              
+    footer(data-sr="enter bottom")
+      p Responsables X México A.C.
+    +scripts
