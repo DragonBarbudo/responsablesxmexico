@@ -1299,7 +1299,7 @@ form.simple textarea {
   margin-top: -10px;
   position: absolute;
   border: none;
-  background: #9ac850;
+  background: #26cabc;
   color: #222222;
   z-index: 10;
 }
@@ -1312,7 +1312,7 @@ form.simple textarea {
 .slick-arrow:hover {
   cursor: pointer;
   background: #222222;
-  color: #9ac850;
+  color: #26cabc;
 }
 /* backstretch */
 .bgslider {
@@ -1328,8 +1328,8 @@ body {
   font-family: 'Lora', serif;
 }
 header {
-  border-top: 10px solid #e85c35;
-  border-bottom: 10px solid #9ac850;
+  border-top: 10px solid #fd7071;
+  border-bottom: 10px solid #26cabc;
 }
 header .slogan {
   margin-top: 80px;
@@ -1358,11 +1358,11 @@ header .slogan {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  border: 2px solid #e85c35;
+  border: 2px solid #fd7071;
   padding: 20px;
 }
 #general > .container #banner h2 {
-  background: #e85c35;
+  background: #fd7071;
   color: #ffffff;
   z-index: 1000;
   font-family: 'Lora', serif;
@@ -1388,7 +1388,7 @@ header .slogan {
   }
 }
 #general > .container #banner .slick-arrow {
-  background: #e85c35;
+  background: #fd7071;
   color: #ffffff;
   font-size: 3em;
   width: 48px;
@@ -1404,7 +1404,7 @@ header .slogan {
 }
 #general > .container #banner .slick-arrow:hover {
   background: #ffffff;
-  color: #e85c35;
+  color: #fd7071;
 }
 @media only screen and (min-width: 481px) and (max-width: 959px), only screen and (max-width: 480px) {
   #general > .container #asociados {
@@ -1412,7 +1412,7 @@ header .slogan {
   }
 }
 #general > .container #asociados h3 {
-  background: #9ac850;
+  background: #26cabc;
   color: #ffffff;
   z-index: 1000;
   font-family: 'Lora', serif;
@@ -1429,7 +1429,7 @@ header .slogan {
 }
 #general > .container #asociados form label {
   display: block;
-  color: #9ac850;
+  color: #26cabc;
   font-family: 'PT Sans Caption', sans-serif;
   font-size: .9em;
   margin-top: 10px;
@@ -1438,12 +1438,12 @@ header .slogan {
 #general > .container #asociados form input,
 #general > .container #asociados form textarea {
   background: transparent;
-  border: 2px solid #9ac850 !important;
+  border: 2px solid #26cabc !important;
   font-family: 'PT Sans Caption', sans-serif;
   font-size: 0.9em;
 }
 #general > .container #asociados form button {
-  background: #9ac850;
+  background: #26cabc;
   color: #ffffff;
   width: 100%;
   text-align: center;
@@ -1455,7 +1455,7 @@ header .slogan {
   margin-top: 10px;
 }
 #general > .container #asociados form button:hover {
-  background: #e85c35;
+  background: #fd7071;
   cursor: pointer;
 }
 footer {
@@ -1466,4 +1466,43 @@ footer {
   font-size: 0.9em;
   color: #939393;
   text-transform: uppercase;
+}
+.logos {
+  margin: 20px 0;
+  text-align: center;
+}
+.logos img {
+  margin: 10px;
+}
+.presentacion {
+  background: #b8507f;
+  color: #ffffff;
+  z-index: 1000;
+  font-family: 'Lora', serif;
+  font-weight: lighter;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: block;
+  margin-top: 20px;
+  -webkit-animation-name: breathing;
+  -webkit-animation-duration: 2s;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+.presentacion i {
+  display: block;
+  font-size: 3em;
+  text-align: center;
+  margin: 10px 0;
+}
+.presentacion span {
+  display: block;
+  margin: 10px 0;
+}
+.presentacion:hover {
+  background: #26cabc;
 }

@@ -13,9 +13,14 @@ include site/_config.jade
           .slogan(data-sr="enter bottom") ¡BUSCAMOS HACER EL CAMBIO!
     section#general
       .container
+        .col6.push3.col-t10.push-t1.col-m12.push-m0
+          a(href="site/img/presentacion.png").box.presentacion
+            i.fa.fa-file-text-o
+            span LEA NUESTRA PRESENTACIÓN EJECUTIVA
+      .container
         .col8.col-t10.push-t1.col-m12.push-m0#banner
           h2 Nuestros candidatos
-          +slider('one', 'site/img/candidato1.jpg', 'site/img/candidato2.jpg', 'site/img/candidato3.jpg', 'site/img/candidato4.jpg','site/img/candidato5.jpg', 'site/img/candidato6.jpg', 'site/img/candidato7.jpg')
+          +slider('one', 'site/img/candidato1.jpg', 'site/img/candidato2.jpg', 'site/img/candidato3.jpg', 'site/img/candidato4.jpg','site/img/candidato5.jpg', 'site/img/candidato6.jpg', 'site/img/candidato7.jpg', 'site/img/candidato8.jpg', 'site/img/candidato9.jpg', 'site/img/candidato10.jpg', 'site/img/candidato11.jpg', 'site/img/candidato12.jpg')
         .col4.col-t10.push-t1.col-m12.push-m0#asociados
           h3 ASOCIADO INFORMADO
           p Regístrate y recibe información en tu correo y/o móvil, así como los avisos de contenidos nuevos e importantes para tí.
@@ -45,4 +50,10 @@ include site/_config.jade
               
     footer(data-sr="enter bottom")
       p Responsables X México A.C.
+    .logos
+      img(src="site/img/logo_brm.png")
+      img(src="site/img/logo_cyg.png")
+      img(src="site/img/logo_g7.png")
+      img(src="site/img/logo_kr.png")
+      img(src="site/img/logo_mag.png")
     +scripts

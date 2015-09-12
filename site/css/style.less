@@ -6,9 +6,9 @@
 @b: #222;
 @w: #fff;
 @g: #626262;
-@main: #9AC850; //Verde
-@sec: #E85C35; //Naranja
-
+@main: #26CABC; //Verde
+@sec: #FD7071; //Naranja
+@purple: #B8507F;
 
 .font{ font-family: 'Lora', serif; }
 .font2{ font-family: 'PT Sans Caption', sans-serif; }
@@ -125,7 +125,13 @@ footer{
   font-size: 0.9em;
   color:@g*1.5;
   text-transform: uppercase;
+  
 }
+.logos{
+    margin: 20px 0;
+    text-align: center;
+    img{margin: 10px;}
+  }
 
 
 .hs(@bg){
@@ -137,4 +143,27 @@ footer{
   text-transform: uppercase;
   font-size: 1.2em;
   text-align: center;
+}
+
+
+.presentacion{
+  .hs(@purple);
+  padding: 10px 20px;
+  text-decoration: none;
+  display: block;
+  margin-top: 20px;
+  .breath;
+  i{
+    display: block;
+    font-size: 3em;
+    text-align: center;
+    margin: 10px 0;
+  }
+  span{
+    display: block;
+    margin: 10px 0;
+  }
+  &:hover{
+    background: @main;
+  }
 }
